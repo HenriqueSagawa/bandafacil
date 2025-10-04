@@ -1,9 +1,9 @@
 import { Hero } from "@/components/hero";
-import { Header } from "@/components/header";
 import { Stats } from "@/components/stats";
 import { Features } from "@/components/features";
 import { AppShowcase } from "@/components/app-showcase";
 import { CTA } from "@/components/cta";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <Features />
       <AppShowcase />
       <CTA />
+      <Footer />
     </div>
   );
 }

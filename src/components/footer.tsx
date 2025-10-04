@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Music } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const footerLinks = {
@@ -14,11 +14,10 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 text-xl font-semibold tracking-tight">
-              <Music className="h-6 w-6 text-primary" />
-              <span>BandFácil</span>
+            <Link href="/">
+              <Image src="/logo.webp" alt="Logo do site" width={100} height={100} className="w-40" />
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Conectando músicos e criando bandas incríveis desde 2025.
             </p>
           </div>
